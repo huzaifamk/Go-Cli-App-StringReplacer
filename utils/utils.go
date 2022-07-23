@@ -66,8 +66,13 @@ func ReplaceLine(filename string) {
 	lines := strings.Split(string(input), "\n")
 
 	for i, line := range lines {
-		if strings.Contains(line, "output") {
-			lines[i] = strings.Replace(line, "output", "output_new", -1)
+		if strings.Contains(line, `"${`) {
+			lines[i] = strings.Replace(line, `"${`, "", -1)
+		}
+	}
+	for i, line := range lines {
+		if strings.Contains(line, `}`) {
+			lines[i] = strings.Replace(line, `}"`, "", -1)
 		}
 	}
 	output := strings.Join(lines, "\n")

@@ -1,14 +1,9 @@
-output_new "rendered" {value = "${data.template_file.example.rendered}"}
+output "rendered" {value = data.template_file.example.rendered} output "rendered" {value = data.template_file.example.rendered}
 
-output_new "rendered" {value = "${data.template_file.example.rendered}"}
+output "rendered" {value = data.template_file.example.rendered}
 
-output_new "rendered" {value = "${data.template_file.example.rendered}"}
+output "rendered" {value = data.template_file.example.rendered}
 
+output "rendered" {value = data.template_file.example.rendered}
 
-output_new "rendered" {value = "${data.template_file.example.rendered}"}
-
-output_new "rendered" {value = "${data.template_file.example.rendered}"}
-
-output_new "rendered" {value = "${data.template_file.example.rendered}"}
-
-
+output "rendered" {value = data.template_file.example.rendered} output "rendered" {value = data.template_file.example.rendered} output "rendered" {value = data.template_file.example.rendered}
