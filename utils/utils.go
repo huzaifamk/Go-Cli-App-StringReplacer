@@ -10,6 +10,7 @@ import (
 )
 
 func FileExists(path string) (bool, error) {
+
 	_, err := os.Stat(path)
 	if err == nil {
 		return true, nil
@@ -40,6 +41,7 @@ func ReplaceFileContent(filename string) {
 }
 
 func StringReplace(filename string, old string, new string) {
+
 	file, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
