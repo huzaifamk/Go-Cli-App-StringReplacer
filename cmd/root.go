@@ -13,7 +13,6 @@ var rootCmd = &cobra.Command{
 	Long: `Text Replacer Tool version 1.0.0
 For help, type replacertool -h | For commands list, type replacertool -l`,
 	CompletionOptions: cobra.CompletionOptions{DisableDefaultCmd: true},
-
 }
 
 func Execute() {
