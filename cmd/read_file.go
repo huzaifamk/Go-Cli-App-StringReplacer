@@ -47,8 +47,6 @@ var fileCmd = &cobra.Command{
 			fmt.Println("File does not exist")
 		}
 
-		// utils.StringReplace(filename, `"${`, "")
-		// utils.ReplaceFileContent(filename)
 		utils.ReplaceLine(filename)
 		fmt.Println("Successfully edited file!")
 
