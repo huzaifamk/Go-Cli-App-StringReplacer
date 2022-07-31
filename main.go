@@ -6,5 +6,5 @@ func main() {
 
 	cmd.Execute()
 
-	
+
 }
